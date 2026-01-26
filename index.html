@@ -10,12 +10,11 @@
       line-height: 1.6;
       color: #222;
     }
-    h1 {
+    h1, h2 {
       color: #003366;
     }
     h2 {
       margin-top: 30px;
-      color: #003366;
     }
     a {
       color: #0066cc;
@@ -30,6 +29,29 @@
     .placeholder {
       font-style: italic;
       color: #666;
+    }
+
+    /* Chairs grid */
+    .chairs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px;
+      margin-top: 20px;
+      max-width: 500px;
+    }
+    .chair {
+      text-align: center;
+    }
+    .chair img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .chair-name {
+      margin-top: 10px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -90,18 +112,28 @@
 
   <div class="section">
     <h2>Fellowship Chairs</h2>
-    <ul>
-      <li>
-        <a href="https://www.csa.iisc.ac.in/~arnabb/" target="_blank">
-          Arnab Bhattacharya
-        </a>
-      </li>
-      <li>
-        <a href="https://www.iiit.ac.in/people/faculty/kamal.karlapalem/" target="_blank">
-          Kamal Karlapalem
-        </a>
-      </li>
-    </ul>
+
+    <div class="chairs-grid">
+      <div class="chair">
+        <!-- Replace src with actual photo URL -->
+        <img src="https://via.placeholder.com/150" alt="Arnab Bhattacharya">
+        <div class="chair-name">
+          <a href="https://www.csa.iisc.ac.in/~arnabb/" target="_blank">
+            Arnab Bhattacharya
+          </a>
+        </div>
+      </div>
+
+      <div class="chair">
+        <!-- Replace src with actual photo URL -->
+        <img src="https://via.placeholder.com/150" alt="Kamal Karlapalem">
+        <div class="chair-name">
+          <a href="https://www.iiit.ac.in/people/faculty/kamal.karlapalem/" target="_blank">
+            Kamal Karlapalem
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
