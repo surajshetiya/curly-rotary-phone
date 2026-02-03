@@ -1,1 +1,1 @@
-# curly-rotary-phone.github.io
+# SIGMOD 2026 Fellowship
